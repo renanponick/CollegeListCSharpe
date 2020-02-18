@@ -33,7 +33,7 @@ namespace ListaTres
                         break;
                     }
                     case 2:{
-                        LerImprimirArquivo.Program.LerImprimirArquivo(a);
+                        LerImprimirArquivo.Program.LerImprimirArquivo();
                         break;
                     }
                     case 3:{
