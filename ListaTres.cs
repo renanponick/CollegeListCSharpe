@@ -1,33 +1,42 @@
-﻿using System;
-using ListaUm;
+using System;
+using TabuadaArquivoTexto;
+using LerImprimirArquivo;
+using Exponenciacao;
+using NomeCincoPessoasAleatorios;
+using RaioAreaCirculo;
+using AnalisarString;
+using DezPrimeirosDigitosLinha;
 
-namespace CCharpe
+namespace ListaTres
 {
     public class Program
     {
-        static void Main(string[] args)
+        static public void ListaTres()
         {
-            int op =0;
+            int op =0,a=0;
             do{
                 Console.WriteLine("Digite a Lista");
                 Console.WriteLine(
-                    "1 ou 2-Lista um e dois\n"+
+                    "1-Tabuada\n"+
+                    "2-LerImprimir\n"+
                     "3-Lista 3\n"+
-                    "11-Sair \n"
+                    "3-Lista 3\n"+
+                    "3-Lista 3\n"
                 );
                 op = Convert.ToInt32(Console.ReadLine());
                 switch (op)
                 {
                     case 1:{
-                        ListaUm.Program.ListaUm();
+                        Console.WriteLine("Número:");
+                        a = Convert.ToInt32(Console.ReadLine());
+                        TabuadaArquivoTexto.Program.TabuadaArquivoTexto(a);
                         break;
                     }
                     case 2:{
-                        ListaUm.Program.ListaUm();
+                        LerImprimirArquivo.Program.LerImprimirArquivo(a);
                         break;
                     }
                     case 3:{
-                        ListaTres.Program.ListaTres();
                         break;
                     }
                     case 11:{
