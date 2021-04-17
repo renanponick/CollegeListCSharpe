@@ -13,7 +13,7 @@ namespace TabuadaArquivoTexto
 
             // Escrevendo no arquivo de texto o arquivo de texto
             string texto ="";
-             try{
+            try {
                 for(int i=0; i<=10; i++){
                     texto += i+" x "+a+" = "+a*i+"\n";
                 }
